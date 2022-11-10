@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Amby | Shopping at its finest</title>
+		<!-- Site Favicon -->
+		<link
+			rel="shortcut icon"
+			href="/assets/favicon.png"
+			type="image/x-icon"
+		/>
+
+		<!-- Font Families -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Font Awesome Icons -->
+		<link
+			rel="stylesheet"
+			href="/assets/fontawesome-free-6.2.0-web/css/solid.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="/assets/fontawesome-free-6.2.0-web/css/fontawesome.css"
+		/>
+
+		<!-- Stylesheet -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<nav class="nav-menu sticky">
+			<a href="/index.html" id="logo">Amby Logo</a>
+			<div class="mobile-menu flex">
+				<span class="blur"></span>
+				<a href="#" class="close-menu"
+					><img
+						src="/assets/close.png"
+						alt="Close Menu"
+						width="50"
+						height="50"
+				/></a>
+				<ul class="main-nav">
+					<li><a href="/shop/shop.html">Shop</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="#faqs">FAQs</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<ul class="socials">
+				<li>
+					<a href="#" id="cart"
+						><span class="fa-solid fa-bag-shopping"></span> Cart</a
+					>
+				</li>
+				<li>
+					<a href="#" id="wishlist"
+						><span class="fa-solid fa-heart"></span>Wishlist</a
+					>
+				</li>
+				<li>
+					<a href="#" id="user"
+						><span class="fa-solid fa-user"></span>User login</a
+					>
+				</li>
+				<li id="phone">+234-5440-2134</li>
+			</ul>
+
+			<a href="#" class="open-menu"
+				><img
+					src="/assets/hamburger.png"
+					alt="Click to Open Menu"
+					width="50"
+					height="50"
+			/></a>
+		</nav>
+		<header>
+			<div class="promo-item">
+				<img
+					src="/images/perfumes/pexels-valeria-boltneva-965989.jpg"
+					alt="assorted perfumes on fur blanket"
+				/>
+				<div class="promo-caption">
+					<h2><span>Summer</span> Sales</h2>
+					<a href="#">Order Now</a>
+				</div>
+				<p class="discount">
+					Over <span>15%</span> off on new arrivals
+				</p>
+			</div>
+			<div class="promo-item">
+				<img
+					src="/images/handbags/pexels-anna-shvets-11124976.jpg"
+					alt="woman on pink carrying classy green handbag"
+				/>
+				<div class="promo-caption">
+					<h2><span>Summer</span> Sales</h2>
+					<a href="#">Order Now</a>
+				</div>
+				<p class="discount">
+					Over <span>15%</span> off on new arrivals
+				</p>
+			</div>
+			<div class="promo-item">
+				<img
+					src="/images/shoes/pexels-анна-хазова-5966185.jpg"
+					alt="beautiful white flowers with silver shoes"
+				/>
+				<div class="promo-caption">
+					<h2><span>Summer</span> Sales</h2>
+					<a href="#">Order Now</a>
+				</div>
+				<p class="discount">
+					Over <span>15%</span> off on new arrivals
+				</p>
+			</div>
+		</header>
+		<section class="our-specials wrapper">
+			<div class="intro">
+				<h3 class="specials-title">Our Weekly Specials</h3>
+				<p>
+					Small talk about the heading or some sorta notice that users
+					should keep in mind while browsing through the products or
+					even a disclaimer.
+				</p>
+			</div>
+			<div class="products spacer flex">
+				<div class="product">
+					<figure>
+						<img
+							src="/images/specials/pexels-bella-zhong-3076787.jpg"
+							alt="red high heels with chanel perfume"
+							width="400"
+							height="400"
+						/>
+						<figcaption>
+							Classy Red Heels with Chanel's Finest Perfume
+						</figcaption>
+					</figure>
+					<span class="price">$1,520</span>
+					<div class="buttons">
+						<a href="#">Add to Wishlist</a>
+						<button type="button" href="#">Buy Now</button>
+					</div>
+				</div>
+				<div class="product">
+					<figure>
+						<img
+							src="/images/specials/tyron-harkiss-foster-BIkif7IMZSQ-unsplash.jpg"
+							alt="red high heels with chanel perfume"
+							width="400"
+							height="400"
+						/>
+						<figcaption>
+							Classy Red Heels with Chanel's Finest Perfume
+						</figcaption>
+					</figure>
+					<span class="price">$820</span>
+					<div class="buttons">
+						<a href="#">Add to Wishlist</a>
+						<button type="button" href="#">Buy Now</button>
+					</div>
+				</div>
+				<div class="product">
+					<figure>
+						<img
+							src="/images/specials/pexels-leah-kelley-325527.jpg"
+							alt="red high heels with chanel perfume"
+							width="400"
+							height="400"
+						/>
+						<figcaption>
+							Classy Red Heels with Chanel's Finest Perfume
+						</figcaption>
+					</figure>
+					<span class="price">$699</span>
+					<div class="buttons">
+						<a href="#">Add to Wishlist</a>
+						<button type="button" href="#">Buy Now</button>
+					</div>
+				</div>
+				<div class="product">
+					<figure>
+						<img
+							src="/images/specials/pexels-valeria-boltneva-965989.jpg"
+							alt="red high heels with chanel perfume"
+							width="400"
+							height="400"
+						/>
+						<figcaption>
+							Classy Red Heels with Chanel's Finest Perfume
+						</figcaption>
+					</figure>
+					<span class="price">$790</span>
+					<div class="buttons">
+						<a href="#">Add to Wishlist</a>
+						<button type="button" href="#">Buy Now</button>
+					</div>
+				</div>
+				<div class="product">
+					<figure>
+						<img
+							src="/images/specials/pexels-evgeniy-volivach-10257094.jpg"
+							alt="red high heels with chanel perfume"
+							width="400"
+							height="400"
+						/>
+						<figcaption>
+							Classy Red Heels with Chanel's Finest Perfume
+						</figcaption>
+					</figure>
+					<span class="price">$1,990</span>
+					<div class="buttons">
+						<a href="#">Add to Wishlist</a>
+						<button type="button" href="#">Buy Now</button>
+					</div>
+				</div>
+				<div class="product">
+					<figure>
+						<img
+							src="/images/specials/pexels-matheus-oliveira-10831402.jpg"
+							alt="red high heels with chanel perfume"
+							width="400"
+							height="400"
+						/>
+						<figcaption>
+							Classy Red Heels with Chanel's Finest Perfume
+						</figcaption>
+					</figure>
+					<span class="price">$1,110</span>
+					<div class="buttons">
+						<a href="#">Add to Wishlist</a>
+						<button type="button" href="#">Buy Now</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="brands">
+			<div class="wrapper">
+				<div class="intro-left-aligned">
+					<h3>
+						Our Collections are handpicked from the finest brands
+					</h3>
+					<p>
+						We help you shop from the best brands with only the best
+						deals. Peruse our top collections in our shop, make a
+						purchase and we'll have it delivered right into your
+						lap.
+					</p>
+				</div>
+				<div class="flex brand-logos-container">
+					<div class="brand">
+						<img
+							src="/images/brand logos/5bfa6e97c69ae-b28ad5b2bcac977f4a21f8a6a35bdbea.png"
+							alt="Michael Kors logo"
+						/>
+					</div>
+					<div class="brand">
+						<img
+							src="/images/brand logos/kisspng-chanel-coco-mademoiselle-fashion-design-designer-5afc3ed021dcb7.3701190815264805921387.png"
+							alt="Chanel logo"
+						/>
+					</div>
+					<div class="brand">
+						<img
+							src="/images/brand logos/kisspng-chanel-louis-vuitton-logo-fashion-lvmh-lv-5b2c7605228f88.5279531215296404531416.png"
+							alt="Louis Vuitton"
+						/>
+					</div>
+					<div class="brand">
+						<img
+							src="/images/brand logos/kisspng-fifth-avenue-cartier-central-park-jewellery-watch-new-arrival-5ad0c683d5e678.5862980115236317478761.png"
+							alt="Cartier logo"
+						/>
+					</div>
+					<div class="brand">
+						<img
+							src="/images/brand logos/kisspng-logo-hm-brand-clothing-portable-network-graphics-5bea05860baa19.6999221715420634940478.png"
+							alt="H&M logo"
+						/>
+					</div>
+					<div class="brand">
+						<img
+							src="/images/brand logos/kisspng-logo-victorias-secret-vector-graphics-brand-victo-fashion-amp-beauty-lintel-5be370fde7a696.8586773915416322539489.png"
+							alt="Victoria Secret logo"
+						/>
+					</div>
+					<p>And Lot's More...</p>
+				</div>
+			</div>
+		</section>
+		<section class="dresses-slider">
+			<div class="intro wrapper">
+				<h3 class="dresses-title">
+					Freshest Runway Steals for Your Closet
+				</h3>
+				<p>
+					Small talk about the heading or some sorta notice that users
+					should keep in mind while browsing through the products or
+					even a disclaimer.
+				</p>
+			</div>
+
+			<div class="slide-container wrapper">
+				<div class="single-slide">
+					<img
+						src="/images/dressing/farhad-khodayari-hUqiXgxKZ4k-unsplash.jpg"
+						alt="Beatiful royal full length gown"
+					/>
+					<div class="slide-content">
+						<span
+							><h4>Beatiful Royal Full length gown</h4>
+							<p class="price">$7,999</p>
+						</span>
+						<p class="description">
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Commodi possimus aliquid quod eius optio
+							placeat quam, quia ducimus sequi. Accusantium
+							reprehenderit ipsum debitis. Voluptas laboriosam,
+							expedita consectetur deserunt qui at.
+						</p>
+						<a href="#">Buy Now</a>
+					</div>
+				</div>
+				<div class="single-slide">
+					<img
+						src="/images/dressing/judeus-samson-0UECcInuCR4-unsplash.jpg"
+						alt="Beatiful royal full length gown"
+					/>
+					<div class="slide-content">
+						<span
+							><h4>Beatiful Royal Full length gown</h4>
+							<p class="price">$7,999</p>
+						</span>
+						<p class="description">
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Commodi possimus aliquid quod eius optio
+							placeat quam, quia ducimus sequi. Accusantium
+							reprehenderit ipsum debitis. Voluptas laboriosam,
+							expedita consectetur deserunt qui at.
+						</p>
+						<a href="#">Buy Now</a>
+					</div>
+				</div>
+				<div class="single-slide">
+					<img
+						src="/images/dressing/laura-chouette-D381E7Lg2J4-unsplash.jpg"
+						alt="Beatiful royal full length gown"
+					/>
+					<div class="slide-content">
+						<span
+							><h4>Beatiful Royal Full length gown</h4>
+							<p class="price">$7,999</p>
+						</span>
+						<p class="description">
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Commodi possimus aliquid quod eius optio
+							placeat quam, quia ducimus sequi. Accusantium
+							reprehenderit ipsum debitis. Voluptas laboriosam,
+							expedita consectetur deserunt qui at.
+						</p>
+						<a href="#">Buy Now</a>
+					</div>
+				</div>
+				<div class="single-slide">
+					<img
+						src="/images/dressing/laura-chouette-d7wSG9uPev4-unsplash.jpg"
+						alt="Beatiful royal full length gown"
+					/>
+					<div class="slide-content">
+						<span
+							><h4>Beatiful Royal Full length gown</h4>
+							<p class="price">$7,999</p>
+						</span>
+						<p class="description">
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Commodi possimus aliquid quod eius optio
+							placeat quam, quia ducimus sequi. Accusantium
+							reprehenderit ipsum debitis. Voluptas laboriosam,
+							expedita consectetur deserunt qui at.
+						</p>
+						<a href="#">Buy Now</a>
+					</div>
+				</div>
+				<div class="single-slide">
+					<img
+						src="/images/dressing/meenal-sharma-M725zF7CQxQ-unsplash.jpg"
+						alt="Beatiful royal full length gown"
+					/>
+					<div class="slide-content">
+						<span
+							><h4>Beatiful Royal Full length gown</h4>
+							<p class="price">$7,999</p>
+						</span>
+						<p class="description">
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Commodi possimus aliquid quod eius optio
+							placeat quam, quia ducimus sequi. Accusantium
+							reprehenderit ipsum debitis. Voluptas laboriosam,
+							expedita consectetur deserunt qui at.
+						</p>
+						<a href="#">Buy Now</a>
+					</div>
+				</div>
+				<div class="single-slide">
+					<img
+						src="/images/dressing/pexels-godisable-jacob-1653222.jpg"
+						alt="Beatiful royal full length gown"
+					/>
+					<div class="slide-content">
+						<span
+							><h4>Beatiful Royal Full length gown</h4>
+							<p class="price">$7,999</p>
+						</span>
+						<p class="description">
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Commodi possimus aliquid quod eius optio
+							placeat quam, quia ducimus sequi. Accusantium
+							reprehenderit ipsum debitis. Voluptas laboriosam,
+							expedita consectetur deserunt qui at.
+						</p>
+						<a href="#">Buy Now</a>
+					</div>
+				</div>
+				<div class="single-slide">
+					<img
+						src="/images/dressing/pexels-sabel-blanco-1903784.jpg"
+						alt="Beatiful royal full length gown"
+					/>
+					<div class="slide-content">
+						<span
+							><h4>Beatiful Royal Full length gown</h4>
+							<p class="price">$7,999</p>
+						</span>
+						<p class="description">
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Commodi possimus aliquid quod eius optio
+							placeat quam, quia ducimus sequi. Accusantium
+							reprehenderit ipsum debitis. Voluptas laboriosam,
+							expedita consectetur deserunt qui at.
+						</p>
+						<a href="#">Buy Now</a>
+					</div>
+				</div>
+
+				<div class="single-slide">
+					<img
+						src="/images/dressing/vladimir-yelizarov-UmNPQoBOu7g-unsplash.jpg"
+						alt="Beatiful royal full length gown"
+					/>
+					<div class="slide-content">
+						<span
+							><h4>Beatiful Royal Full length gown</h4>
+							<p class="price">$7,999</p>
+						</span>
+						<p class="description">
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Commodi possimus aliquid quod eius optio
+							placeat quam, quia ducimus sequi. Accusantium
+							reprehenderit ipsum debitis. Voluptas laboriosam,
+							expedita consectetur deserunt qui at.
+						</p>
+						<a href="#">Buy Now</a>
+					</div>
+				</div>
+				<div class="single-slide">
+					<img
+						src="/images/dressing/young-woman-2417600_1920.jpg"
+						alt="Beatiful royal full length gown"
+					/>
+					<div class="slide-content">
+						<span
+							><h4>Beatiful Royal Full length gown</h4>
+							<p class="price">$7,999</p>
+						</span>
+						<p class="description">
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Commodi possimus aliquid quod eius optio
+							placeat quam, quia ducimus sequi. Accusantium
+							reprehenderit ipsum debitis. Voluptas laboriosam,
+							expedita consectetur deserunt qui at.
+						</p>
+						<a href="#">Buy Now</a>
+					</div>
+				</div>
+				<div class="single-slide">
+					<img
+						src="/images/dressing/woman-3303690_1920.jpg"
+						alt="Beatiful royal full length gown"
+					/>
+					<div class="slide-content">
+						<span
+							><h4>Beatiful Royal Full length gown</h4>
+							<p class="price">$4,999</p>
+						</span>
+						<p class="description">
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Commodi possimus aliquid quod eius optio
+							placeat quam, quia ducimus sequi. Accusantium
+							reprehenderit ipsum debitis. Voluptas laboriosam,
+							expedita consectetur deserunt qui at.
+						</p>
+						<a href="#">Buy Now</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="progress-bar wrapper"><span></span></div>
+		</section>
+		<section class="blog">
+			<div class="intro">
+				<p class="subheading">Our Blog</p>
+				<h3>Latest Articles</h3>
+			</div>
+			<div class="blogpost-container wrapper">
+				<div class="blogpost">
+					<div class="related-image">
+						<a href="#">
+							<img
+								src="/images/shoes/pexels-scott-webb-137603.jpg"
+								alt="Doce Gabana Perfume"
+							/>
+						</a>
+					</div>
+					<div class="blogpost-content">
+						<div class="meta">
+							<p class="author">Charlotte Butterfield</p>
+							<p class="date">24/2/2022</p>
+							<p class="category">Newest Arrivals</p>
+							<p class="time-to-read">3 mins read</p>
+						</div>
+						<a href="#" class="blogpost-title">
+							The Doce Gabana whispy cream scent just arrived all
+							our warehouses today
+						</a>
+						<p class="excerpt">
+							The scent is the most raved of the year 2022 and won
+							an all-star rating on the topmost soughted scents in
+							2022 according to the New York Times
+						</p>
+						<a href="blog.html" class="read-more">Read more...</a>
+					</div>
+				</div>
+				<div class="blogpost">
+					<div class="related-image">
+						<a href="#">
+							<img
+								src="/images/handbags/pexels-anna-shvets-11124976.jpg"
+								alt="Doce Gabana Perfume"
+							/>
+						</a>
+					</div>
+					<div class="blogpost-content">
+						<div class="meta">
+							<p class="author">Charlotte Butterfield</p>
+							<p class="date">24/2/2022</p>
+							<p class="category">Newest Arrivals</p>
+							<p class="time-to-read">3 mins read</p>
+						</div>
+						<a href="#" class="blogpost-title">
+							The Doce Gabana whispy cream scent just arrived all
+							our warehouses today
+						</a>
+						<p class="excerpt">
+							The scent is the most raved of the year 2022 and won
+							an all-star rating on the topmost soughted scents in
+							2022 according to the New York Times
+						</p>
+						<a href="blog.html" class="read-more">Read more...</a>
+					</div>
+				</div>
+				<div class="blogpost">
+					<div class="related-image">
+						<a href="#">
+							<img
+								src="/images/perfumes/pexels-valeria-boltneva-1961795.jpg"
+								alt="Doce Gabana Perfume"
+							/>
+						</a>
+					</div>
+					<div class="blogpost-content">
+						<div class="meta">
+							<p class="author">Charlotte Butterfield</p>
+							<p class="date">24/2/2022</p>
+							<p class="category">Newest Arrivals</p>
+							<p class="time-to-read">3 mins read</p>
+						</div>
+						<a href="#" class="blogpost-title">
+							The Doce Gabana whispy cream scent just arrived all
+							our warehouses today
+						</a>
+						<p class="excerpt">
+							The scent is the most raved of the year 2022 and won
+							an all-star rating on the topmost soughted scents in
+							2022 according to the New York Times
+						</p>
+						<a href="blog.html" class="read-more">Read more...</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="faqs wrapper">
+			<div class="intro-left-aligned">
+				<h3 id="faqs">Frequently Asked Questions</h3>
+				<img
+					src="/assets/puzzled man-cartoon.gif"
+					alt="puzzled man-cartoon"
+				/>
+			</div>
+			<div class="questions">
+				<div class="single-question">
+					<h4>
+						How can I make a bulk purchase with color variations?
+					</h4>
+					<p>
+						You can make a purchase by doing blah blah blah and some
+						other stuff that will be added here. Also feel free to
+						contact us at nevercontactus.com for further assistance.
+					</p>
+				</div>
+				<div class="single-question">
+					<h4>Can I make a purchase with wire transfer?</h4>
+					<p>
+						You can make a purchase by doing blah blah blah and some
+						other stuff that will be added here. Also feel free to
+						contact us at nevercontactus.com for further assistance.
+					</p>
+				</div>
+				<div class="single-question">
+					<h4>My payment was rejected, why?</h4>
+					<p>
+						This is probably because of blah blah blah and some
+						other stuff that will be added here. Also feel free to
+						contact us at nevercontactus.com for further assistance.
+					</p>
+				</div>
+				<div class="single-question">
+					<h4>I have a suggestion, who do I contact?</h4>
+					<p>
+						You can make a purchase by doing blah blah blah and some
+						other stuff that will be added here. Also feel free to
+						contact us at nevercontactus.com for further assistance.
+					</p>
+				</div>
+				<div class="single-question">
+					<h4>Can I order for special delivery?</h4>
+					<p>
+						You can make a purchase by doing blah blah blah and some
+						other stuff that will be added here. Also feel free to
+						contact us at nevercontactus.com for further assistance.
+					</p>
+				</div>
+				<div class="single-question">
+					<h4>How long does it take for an order to be fulfilled?</h4>
+					<p>
+						You can make a purchase by doing blah blah blah and some
+						other stuff that will be added here. Also feel free to
+						contact us at nevercontactus.com for further assistance.
+					</p>
+				</div>
+				<div class="single-question">
+					<h4>What if I am no longer interested in an order?</h4>
+					<p>
+						You can make a purchase by doing blah blah blah and some
+						other stuff that will be added here. Also feel free to
+						contact us at nevercontactus.com for further assistance.
+					</p>
+				</div>
+			</div>
+		</section>
+		<span
+			class="scroll-to-top"
+			role="button"
+			aria-label="Scroll to Top Button"
+		></span>
+		<footer>
+			<div class="footer-nav">
+				<h4>Navigation</h4>
+				<ul>
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/shop/shop.html">Shop</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="#faqs">FAQs</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-socials">
+				<h4>Our Socials</h4>
+				<ul class="socials">
+					<li><a href="#" id="instagram">Instagram</a></li>
+					<li><a href="#" id="pinterest">Pinterest</a></li>
+					<li id="phone">+234-5440-2134</li>
+					<li id="email">support@amby.com</li>
+				</ul>
+			</div>
+
+			<div class="newsletter">
+				<h4>Newsletter</h4>
+				<p>
+					Join thousands of people getting the latest deals straight
+					to their mailbox. You will get the earliest notice on new
+					arrivals, discounts and even freebies.
+				</p>
+
+				<form class="newsletter-form" action="" method="post">
+					<input
+						type="email"
+						name="email"
+						placeholder="Your email goes here"
+						required
+					/>
+					<button type="submit" formaction="">Subscribe</button>
+				</form>
+			</div>
+			<p class="copyright">Copyright Amby 2022. All rights reserved.</p>
+		</footer>
+		<script src="script/jquery-3.6.1.js"></script>
+		<script src="script/script.js"></script>
+	</body>
+</html>

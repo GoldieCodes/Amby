@@ -1,0 +1,515 @@
+:root {
+	--primaryclr: #12122c;
+	--secondaryclr: #fdca00;
+	--gradientclrRt: linear-gradient(to right, white, white, #fdca0091);
+	--gradientclrLt: linear-gradient(to left, white, white, #fdca0091);
+	--bodytext: #392f19;
+	--boxshadowclr: rgba(195, 177, 121, 0.705);
+	--basicfont: "IBM Plex Sans", Tahoma, sans-serif;
+	--stylishfont: "Goudy Bookletter 1911", serif;
+	--faqsfontsize: clamp(18px, 1.2vw, 22px);
+	--transition: all 1s ease;
+	--footertextclr: rgb(202, 201, 201);
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #fdfdfd;
+	font-family: var(--basicfont);
+	overflow-x: hidden;
+}
+
+p {
+	font-family: var(--basicfont);
+	font-size: clamp(15px, 1.2vw, 18px);
+	line-height: 1.6em;
+	color: var(--bodytext);
+	margin-top: 0;
+}
+
+*::selection {
+	background: #fdca008d;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--stylishfont);
+	color: black;
+	margin-bottom: 0;
+}
+
+h3 {
+	font-size: clamp(35px, 3vw, 45px);
+	position: relative;
+	padding-bottom: 0.6rem;
+	margin-bottom: 0.7rem;
+}
+
+h3:before {
+	content: "";
+	width: clamp(100px, 20%, 200px);
+	height: 3px;
+	background: var(--secondaryclr);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.wrapper {
+	margin: 0 auto 15vh;
+	width: 87%;
+	max-width: 1500px;
+}
+
+.spacer {
+	margin-top: 5vh;
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 1.5em;
+}
+
+.intro {
+	width: 60%;
+	margin: 0 auto;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+@media all and (min-width: 900px) {
+	.intro p {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+@media all and (min-width: 750px) {
+	.intro-left-aligned p,
+	.intro-left-aligned h3 {
+		width: 80%;
+	}
+}
+.intro h3::before {
+	left: 50%;
+	translate: -50% 0;
+}
+
+.intro-left-aligned {
+	text-align: inherit;
+	width: 100%;
+	margin: 0;
+}
+
+.intro-left-aligned h3 {
+	font-size: clamp(35px, 3vw, 45px);
+	position: relative;
+	text-transform: capitalize;
+	padding-bottom: 0.6rem;
+	margin-bottom: 0.7rem;
+}
+
+.intro-left-aligned h3:before {
+	left: 0;
+	translate: 0 0;
+}
+
+nav {
+	padding: 0.7em 2em;
+	width: 100%;
+	max-width: 1500px;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid var(--secondaryclr);
+	z-index: 500;
+	background: var(--primaryclr);
+	transition: position 1s ease;
+}
+
+.sticky {
+	position: sticky;
+	top: 0;
+	left: 0;
+	transition: position 1s ease;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+nav ul {
+	display: flex;
+	align-items: center;
+}
+nav ul li a {
+	padding: 1em 1.3em;
+	text-decoration: none;
+	font-size: 16px;
+	color: white;
+	position: relative;
+	transition: all 1s ease;
+}
+.nav-menu .close-menu,
+.nav-menu .open-menu {
+	display: none;
+}
+span.blur {
+	display: none;
+}
+@media all and (max-width: 1000px) {
+	.mobile-menu.flex {
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+	}
+	.mobile-menu {
+		position: absolute;
+		background: #ebd88ef5;
+		width: 60vw;
+		height: 100vh;
+		z-index: 5;
+		top: 0;
+		right: -100%;
+	}
+	span.blur {
+		width: 40vw;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: -40vw;
+		background: #000000de;
+	}
+	.mobile-menu .main-nav {
+		flex-direction: column;
+	}
+	.mobile-menu .main-nav li {
+		padding: 1em;
+		color: #12122c;
+	}
+	.mobile-menu .main-nav li a {
+		color: #12122c;
+	}
+	.nav-menu .close-menu,
+	.nav-menu .open-menu {
+		display: inline-block;
+		text-align: right;
+		width: max(7%, 40px);
+		margin-right: 2%;
+	}
+	.open-menu img {
+		width: 80%;
+		display: block;
+	}
+	.close-menu img {
+		width: 70%;
+		max-width: 150px;
+	}
+	.close-menu {
+		position: absolute;
+		top: 5%;
+		right: 10%;
+	}
+	.nav-menu #phone {
+		width: 0;
+		text-indent: -9999999px;
+	}
+	nav {
+		padding: 0.7em 1em;
+	}
+
+	.main-nav a:before {
+		height: 100%;
+	}
+	.fa-heart,
+	.fa-user,
+	.fa-bag-shopping {
+		color: white !important;
+		font-size: 1.1em !important;
+	}
+	.fa-heart:hover,
+	.fa-user:hover,
+	.fa-bag-shopping:hover {
+		color: var(--secondaryclr) !important;
+	}
+	.main-nav a:before {
+		height: 100% !important;
+		background-color: rgb(249, 237, 216) !important;
+		z-index: -1;
+	}
+}
+
+#logo {
+	display: inline-block;
+	width: 180px;
+	height: 60px;
+	margin-right: 0.7em;
+	text-indent: -9999999px;
+	background-image: url("/assets/Amby\ Logo.png");
+	background-size: 120%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.main-nav a:before {
+	content: "";
+	width: 0;
+	height: 2px;
+	background: var(--secondaryclr);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition: all 1s ease;
+}
+
+.main-nav a:hover:before {
+	width: 100%;
+	transition: all 1s ease;
+}
+
+.main-nav ul li a:active {
+	color: var(--secondaryclr);
+}
+
+.socials a {
+	display: inline-block;
+	width: 2em;
+	padding: 0.5em;
+	margin-right: 0.7em;
+	text-indent: -9999999px;
+}
+
+.socials #phone,
+.socials #email {
+	margin: 0;
+	padding: 0;
+	margin-left: 0.9em;
+	position: relative;
+	color: white;
+}
+.socials #phone:before,
+.socials #email:before {
+	content: "";
+	background: url("/assets/telephone-white.png");
+	background-size: 17px;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	bottom: 0%;
+	left: -30%;
+	rotate: 25deg;
+}
+.socials #email:before {
+	background: url("/assets/email-gold-color.png");
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: left;
+	left: 0;
+	rotate: 0deg;
+}
+.socials #email {
+	text-indent: 1.5em;
+	margin: 0;
+}
+
+.fa-heart,
+.fa-user,
+.fa-bag-shopping {
+	color: var(--secondaryclr);
+	font-size: 1.2em;
+	position: absolute;
+	left: 0;
+	text-indent: 0;
+}
+.fa-heart:hover,
+.fa-user:hover,
+.fa-bag-shopping:hover {
+	color: white;
+	scale: 1.1;
+}
+
+.socials #instagram {
+	background: url("/assets/instagram-gold-color.png");
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: var(--transition);
+}
+.socials #instagram:hover {
+	background: url("/assets/instagram-white.png");
+	background-size: 22px;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: var(--transition);
+}
+.socials #pinterest {
+	background: url("/assets/pinterest-gold-color.png");
+	background-size: 22px;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: var(--transition);
+}
+.socials #pinterest:hover {
+	background: url("/assets/pinterest-white.png");
+	background-size: 24px;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: var(--transition);
+}
+
+.scroll-to-top {
+	width: 5vw;
+	height: 5vw;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 2%;
+	right: 4%;
+	z-index: 500;
+	opacity: 0.8;
+	cursor: pointer;
+	background-image: url("/images/up-arrow.png");
+	background-size: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: rgba(255, 205, 56, 0.705);
+	box-shadow: 0 0 5px rgba(51, 50, 45, 0.705);
+	transition: all 0.5s ease;
+	display: none;
+}
+.scroll-to-top:hover {
+	opacity: 1;
+	background-color: #f0c002;
+	transition: all 0.5s ease;
+}
+
+footer {
+	background: var(--primaryclr);
+	padding: 1em 7vw;
+	position: relative;
+	bottom: 0;
+}
+
+@media all and (min-width: 2000px) {
+	footer {
+		padding: 1em 27em;
+	}
+}
+
+footer h4,
+footer p,
+footer a,
+.footer-socials li#phone,
+.footer-socials li#email {
+	color: var(--footertextclr);
+}
+
+.footer-nav ul li a {
+	padding: 0.3em 0;
+	text-decoration: none;
+	font-size: 16px;
+	display: block;
+	width: 40%;
+}
+
+footer ul li a:hover {
+	color: var(--secondaryclr);
+}
+
+footer h4 {
+	border-left: 3px solid var(--secondaryclr);
+	font-size: 22px;
+	padding-left: 0.5em;
+	margin-bottom: 0.8em;
+	letter-spacing: 0.07em;
+}
+
+.footer-socials a {
+	text-decoration: none;
+	text-indent: 25px;
+	padding: 0;
+	width: 50%;
+}
+
+.footer-socials ul li,
+.footer-socials li#phone {
+	margin-bottom: 0.8em;
+}
+
+.footer-socials #instagram,
+.footer-socials #pinterest {
+	background-position: left;
+}
+
+.footer-socials li#phone:before {
+	background-image: url("/assets/telephone-gold-color.png");
+	background-size: 20px;
+	left: -28%;
+}
+
+footer button {
+	padding: 0.7em 0;
+	border-radius: 50px;
+	width: 30%;
+	cursor: pointer;
+	border: none;
+	color: var(--primaryclr);
+	background: var(--secondaryclr);
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+footer button:hover {
+	opacity: 0.8;
+}
+
+footer input {
+	outline: none;
+	border: none;
+	width: 65%;
+	font-size: 15px;
+	padding: 0.7em;
+	border-radius: 7px;
+	background: var(--footertextclr);
+}
+
+footer input:focus {
+	border: 1px solid red;
+}
+
+footer .copyright {
+	margin: 0 auto;
+	margin-top: 5vh;
+	color: #828181;
+}
+
+@media all and (min-width: 750px) {
+	footer {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+	footer .newsletter {
+		grid-column: span 2;
+	}
+	footer .copyright {
+		margin-top: 0;
+		grid-column: span 4;
+	}
+}
