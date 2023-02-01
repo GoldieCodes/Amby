@@ -933,6 +933,9 @@ section.brands:before {
 .blogpost {
 	width: min(100%, 300px);
 }
+.blogpost-title:hover {
+	color: #0107c7cf;
+}
 @media all and (min-width: 750px) {
 	.blogpost-container {
 		display: flex;
@@ -1003,7 +1006,7 @@ a.read-more {
 	display: inline-block;
 }
 a.read-more:hover {
-	color: var(--secondaryclr);
+	color: #0107c7cf;
 }
 .blog .intro h3:before {
 	display: none;
@@ -1137,7 +1140,7 @@ footer input {
 }
 
 footer input:focus {
-	border: 1px solid red;
+	border: 2px solid var(--secondaryclr);
 }
 
 footer .copyright {
