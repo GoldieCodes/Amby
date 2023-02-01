@@ -933,6 +933,9 @@ section.brands:before {
 .blogpost {
 	width: min(100%, 300px);
 }
+.blog .intro p.subheading {
+	color: #0107c7cf;
+}
 .blogpost-title:hover {
 	color: #0107c7cf;
 }
