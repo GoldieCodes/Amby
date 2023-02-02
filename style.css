@@ -398,14 +398,16 @@ header img {
 }
 .promo-caption {
 	width: 40%;
+	min-width: 270px;
 	padding: 0.5em;
 	text-transform: uppercase;
 	font-size: 3em;
 	left: 3%;
-	top: 20%;
+	bottom: 20%;
 	background: rgba(0, 0, 0, 0.374);
 }
 .promo-caption h2 {
+	font-size: clamp(40px, 5vw, 1.5em);
 	margin-top: 0;
 	margin-bottom: 3vh;
 	line-height: 1;
@@ -418,10 +420,13 @@ header img {
 .promo-item p {
 	color: var(--primaryclr);
 	background: var(--secondaryclr);
-	font-size: 1.5em;
+	font-size: clamp(13px, 2vw, 20px);
 	font-style: italic;
 	line-height: 1;
 	width: 15%;
+	height: 15%;
+	min-width: 120px;
+	min-height: 120px;
 	text-align: center;
 	padding: 1em;
 	border-radius: 50%;
