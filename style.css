@@ -378,9 +378,14 @@ span.blur {
 header {
 	width: 100%;
 	max-width: 1500px;
-	height: 70vh;
+	height: 500px;
 	margin-bottom: 7vh;
 	position: relative;
+}
+@media all and (min-width: 1200px) {
+	header {
+		height: 70vh;
+	}
 }
 
 header img {
@@ -403,7 +408,7 @@ header img {
 	text-transform: uppercase;
 	font-size: 3em;
 	left: 3%;
-	bottom: 20%;
+	bottom: 15%;
 	background: rgba(0, 0, 0, 0.374);
 }
 .promo-caption h2 {
@@ -423,12 +428,11 @@ header img {
 	font-size: clamp(13px, 2vw, 20px);
 	font-style: italic;
 	line-height: 1;
-	width: 15%;
-	height: 15%;
-	min-width: 120px;
-	min-height: 120px;
+	width: clamp(120px, 15%, 180px);
+	display: grid;
+	align-items: center;
 	text-align: center;
-	padding: 1em;
+	padding: 1.3em;
 	border-radius: 50%;
 	right: 10%;
 	top: 10%;
@@ -445,7 +449,7 @@ header img {
 }
 .promo-caption a {
 	color: white;
-	padding-right: 2em;
+	width: 100%;
 	font-family: var(--stylishfont);
 	display: block;
 	position: relative;
