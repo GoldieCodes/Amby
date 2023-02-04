@@ -86,6 +86,7 @@ h3:before {
 
 .intro {
 	width: 60%;
+	min-width: 300px;
 	margin: 0 auto;
 	text-transform: capitalize;
 	text-align: center;
@@ -119,7 +120,7 @@ h3:before {
 	position: relative;
 	text-transform: capitalize;
 	padding-bottom: 0.6rem;
-	margin-bottom: 0.7rem;
+	margin-bottom: 0.7em !important;
 }
 
 .intro-left-aligned h3:before {
@@ -415,6 +416,7 @@ header img {
 	font-size: clamp(40px, 5vw, 1.5em);
 	margin-top: 0;
 	margin-bottom: 3vh;
+	color: wheat;
 	line-height: 1;
 }
 .promo-item h2 span {
@@ -504,6 +506,13 @@ header img {
 	box-shadow: 0 0 10px var(--boxshadowclr);
 }
 
+@media all and (max-width: 500px) {
+	.questions {
+		padding: 0;
+		box-shadow: none;
+	}
+}
+
 .faqs .single-question h4 {
 	margin-bottom: 8px;
 	padding: 1em;
@@ -577,8 +586,7 @@ header img {
 .our-specials .product {
 	position: relative;
 	height: clamp(400px, 27vw, 600px);
-	width: min(100%, 300px);
-	flex-grow: 2;
+	flex-grow: 1;
 	border-radius: 5px;
 	box-shadow: 0 0 8px var(--boxshadowclr);
 	overflow: hidden;
@@ -708,6 +716,9 @@ header img {
 	.flex {
 		flex-direction: row;
 	}
+	.our-specials .product {
+		width: 300px;
+	}
 }
 
 /* Styles for the Dress Slides Section */
@@ -758,6 +769,7 @@ header img {
 .dresses-slider .single-slide img {
 	width: clamp(300px, 25vw, 600px);
 	height: 62vh;
+	max-height: 400px;
 	object-fit: cover;
 	object-position: center;
 	box-shadow: 0px 0px 15px var(--boxshadowclr);
@@ -882,7 +894,7 @@ section.brands {
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
-	padding: 15vh 0;
+	padding: 7vh 0 4vh;
 }
 section.brands:before {
 	content: "";
@@ -891,7 +903,6 @@ section.brands:before {
 	position: absolute;
 	top: 0;
 	left: 0;
-
 	background: #010102;
 	background-image: url(/assets/glitter.gif);
 	opacity: 0.3;
@@ -902,6 +913,7 @@ section.brands:before {
 }
 .brands p {
 	color: white;
+	position: relative;
 	z-index: 1;
 }
 .brands .intro-left-aligned h3 {
@@ -913,8 +925,9 @@ section.brands:before {
 	z-index: 1;
 }
 .brand {
-	width: clamp(70px, 12vw, 210px);
-	height: clamp(70px, 12vw, 200px);
+	width: clamp(100px, 12vw, 210px);
+	height: clamp(105px, 12vw, 200px);
+	flex-grow: 1;
 	position: relative;
 	background: white;
 	border-radius: 12px;
@@ -960,9 +973,6 @@ section.brands:before {
 .blog .wrapper {
 	margin-bottom: 0;
 }
-.blogpost {
-	width: min(100%, 300px);
-}
 .blog .intro p.subheading {
 	color: var(--bluehoverclr);
 }
@@ -976,6 +986,7 @@ section.brands:before {
 		gap: 2em;
 	}
 	.blogpost {
+		width: 300px;
 		flex-grow: 1;
 	}
 }
@@ -1057,8 +1068,8 @@ a.read-more:hover {
 }
 
 .scroll-to-top {
-	width: 5vw;
-	height: 5vw;
+	width: clamp(70px, 5vw, 120px);
+	height: clamp(70px, 5vw, 120px);
 	border-radius: 50%;
 	position: fixed;
 	bottom: 2%;
