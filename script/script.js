@@ -123,6 +123,6 @@ $(function () {
 	$(".close-menu").click(function () {
 		$(".mobile-menu").animate({ right: "-100%" }, 1000);
 		$("span.blur").fadeOut();
-		$(".mobile-menu").css({ display: "none" });
+		$(".mobile-menu").hide(1000);
 	});
 });
