@@ -116,11 +116,13 @@ $(function () {
 	// This code is for the mobile menu
 
 	$(".open-menu").click(function () {
+		$(".mobile-menu").css({ display: "inherit" });
 		$(".mobile-menu").animate({ right: "0%" }, 1000);
 		$("span.blur").fadeIn(1500);
 	});
 	$(".close-menu").click(function () {
 		$(".mobile-menu").animate({ right: "-100%" }, 1000);
 		$("span.blur").fadeOut();
+		$(".mobile-menu").css({ display: "none" });
 	});
 });

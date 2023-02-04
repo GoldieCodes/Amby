@@ -189,6 +189,7 @@ span.blur {
 		z-index: 5;
 		top: 0;
 		right: -100%;
+		display: none;
 	}
 	span.blur {
 		width: 40vw;
@@ -404,7 +405,7 @@ header img {
 	position: absolute;
 }
 .promo-caption {
-	width: 40%;
+	width: 35%;
 	min-width: 270px;
 	padding: 0.5em;
 	text-transform: uppercase;
@@ -447,7 +448,7 @@ header img {
 }
 .promo-caption span.order-now-button {
 	display: flex;
-	font-size: 0.5em;
+	font-size: max(2vw, 0.4em);
 	color: white;
 }
 .promo-caption a {
