@@ -107,7 +107,7 @@ h3:before {
 }
 .intro h3::before {
 	left: 50%;
-	translate: -50% 0;
+	transform: translateX(-50%);
 }
 
 .intro-left-aligned {
@@ -126,7 +126,7 @@ h3:before {
 
 .intro-left-aligned h3:before {
 	left: 0;
-	translate: 0 0;
+	transform: translate(0);
 }
 
 nav {
@@ -464,10 +464,10 @@ header img {
 }
 @keyframes movingcart {
 	from {
-		translate: 0 0;
+		transform: translate(0);
 	}
 	to {
-		translate: 1em 0;
+		transform: translateX(1em);
 	}
 }
 .fa-cart-shopping {
@@ -493,7 +493,7 @@ header img {
 
 .intro-left-aligned img {
 	width: 100%;
-	translate: -15% 0;
+	transform: translateX(-15%);
 }
 @media all and (max-width: 800px) {
 	.intro-left-aligned img {
@@ -628,7 +628,7 @@ header img {
 	bottom: 4%;
 	display: flex;
 	left: 50%;
-	translate: -50%;
+	transform: translateX(-50%);
 	flex-direction: column;
 	gap: 0.8em;
 }
@@ -664,7 +664,7 @@ header img {
 
 .our-specials button:hover {
 	color: black;
-	translate: 0 2px;
+	transform: translateY(2px);
 	transition: all 800ms ease;
 }
 
@@ -848,7 +848,7 @@ header img {
 
 .slide-content a:hover {
 	border: 3px solid var(--primaryclr);
-	translate: 0 5px;
+	transform: translateY(5px);
 	transition: all 1s ease;
 }
 
