@@ -726,7 +726,7 @@ header img {
 
 /* Styles for the Dress Slides Section */
 .dresses-slider {
-	padding: 3em 0;
+	padding: 2em 0;
 }
 .dresses-slider .wrapper {
 	margin-bottom: 0;
@@ -853,7 +853,7 @@ header img {
 }
 
 .progress-bar {
-	width: clamp(200px, 60%, 1000px);
+	width: clamp(300px, 60%, 1000px);
 	height: 3vh;
 	box-shadow: inset 0 0 5px var(--boxshadowclr);
 	position: relative;
