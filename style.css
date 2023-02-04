@@ -82,10 +82,11 @@ h3:before {
 	flex-direction: column;
 	flex-wrap: wrap;
 	gap: 1.5em;
+	align-content: center;
 }
 
 .intro {
-	width: 60%;
+	width: 80%;
 	min-width: 300px;
 	margin: 0 auto;
 	text-transform: capitalize;
@@ -219,8 +220,8 @@ span.blur {
 		display: block;
 	}
 	.close-menu img {
-		width: 70%;
-		max-width: 150px;
+		width: 90%;
+		height: 100%;
 	}
 	.close-menu {
 		position: absolute;
@@ -585,6 +586,7 @@ header img {
 
 .our-specials .product {
 	position: relative;
+	width: 90%;
 	height: clamp(400px, 27vw, 600px);
 	flex-grow: 1;
 	border-radius: 5px;
@@ -926,7 +928,7 @@ section.brands:before {
 }
 .brand {
 	width: clamp(100px, 12vw, 210px);
-	height: clamp(105px, 12vw, 200px);
+	height: clamp(105px, 15vw, 170px);
 	flex-grow: 1;
 	position: relative;
 	background: white;
@@ -948,6 +950,11 @@ section.brands:before {
 	flex-direction: row;
 }
 @media all and (min-width: 800px) {
+	section.brands {
+		height: 100vh;
+		display: grid;
+		align-items: center;
+	}
 	.brands .wrapper {
 		display: flex;
 		align-items: center;
@@ -1013,9 +1020,11 @@ section.brands:before {
 }
 .meta p {
 	position: relative;
+	text-align: center;
 	margin: 0;
 	flex-grow: 1;
 	font-size: 12px;
+	padding-right: 0.5em;
 }
 .blogpost-content .meta p:after {
 	content: "|";
