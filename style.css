@@ -217,12 +217,20 @@ span.blur {
 		margin-right: 2%;
 	}
 	.open-menu img {
-		width: 80%;
+		width: clamp(25px, 90%, 45px);
+		height: auto;
 		display: block;
+		transition: all 0.4s ease;
 	}
 	.close-menu img {
-		width: 90%;
-		height: 100%;
+		width: 70%;
+		height: auto;
+		transition: all 0.4s ease;
+	}
+	.open-menu img:hover,
+	.close-menu img:hover {
+		transform: scale(1.2);
+		transition: all 0.4s ease;
 	}
 	.close-menu {
 		position: absolute;
