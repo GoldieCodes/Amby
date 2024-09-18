@@ -125,7 +125,7 @@ $(function () {
 		$("span.blur").fadeOut();
 		$(".mobile-menu").hide(1000);
 	});
-	$(".mobile-menu .main-nav li a").click(function () {
+	$(".main-nav.mobile-menu li a").click(function () {
 		$(".mobile-menu").animate({ right: "-100%" }, 1000);
 		$("span.blur").fadeOut();
 		$(".mobile-menu").hide(1000);
