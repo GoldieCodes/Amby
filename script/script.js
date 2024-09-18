@@ -125,9 +125,4 @@ $(function () {
 		$("span.blur").fadeOut();
 		$(".mobile-menu").hide(1000);
 	});
-	$(".main-nav .mobile-menu li a").click(function () {
-		$(".mobile-menu").animate({ right: "-100%" }, 1000);
-		$("span.blur").fadeOut();
-		$(".mobile-menu").hide(1000);
-	});
 });
