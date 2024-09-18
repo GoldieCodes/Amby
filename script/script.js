@@ -117,12 +117,15 @@ $(function () {
 
 	$(".open-menu").click(function () {
 		$(".mobile-menu").css({ display: "inherit" });
-		$(".mobile-menu").animate({ right: "0%" }, 1000);
-		$("span.blur").fadeIn(1500);
+		$(".mobile-menu").animate({ right: "0%" }, 600);
+		$("span.blur").fadeIn(1000);
 	});
 	$(".close-menu").click(function () {
+		$(".mobile-menu").animate({ right: "-100%" }, 600);
+		$("span.blur").fadeOut();
+	});
+	$(".mobile-menu .main-nav li a").click(function () {
 		$(".mobile-menu").animate({ right: "-100%" }, 1000);
 		$("span.blur").fadeOut();
-		$(".mobile-menu").hide(1000);
 	});
 });
